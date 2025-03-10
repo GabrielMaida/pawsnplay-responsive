@@ -29,12 +29,6 @@ This project involves the implementation of a responsive blog homepage, adhering
 3. Secondary page navigation does not need to be implemented.
 4. In the **Featured Products** section, the search field will be purely visual (non-functional).
 
-### Design References
-- **Mobile Layout**:<br>
-    <img src="./mobile.png" alt="Mobile Design" height="3000px">
-- **Desktop Layout**:  
-    <img src="./desktop.png" alt="Desktop Design" height="1000px">
-
 ### Restrictions
 - The use of libraries or frameworks, such as React.js or Node.js, is not allowed.
 - The implementation should focus on native technologies (**HTML**, **CSS**, **JS/TS**) and follow programming best practices.
@@ -49,3 +43,14 @@ The **Mobile First** approach was adopted, ensuring that the design was initiall
 
 Practices such as importing fonts from Google Fonts and setting maximum heights for images were implemented to strengthen the visual consistency of the project.
 
+### Design References
+<div style="display: flex; flex-direction: row; gap: 20px;">
+  <div>
+    <h4>Mobile Layout</h4>
+    <img src="./mobile.png" alt="Mobile Design" style="width: 250px;">
+  </div>
+  <div>
+    <h4>Desktop Layout</h4>
+    <img src="./desktop.png" alt="Desktop Design" style="width: 300px;">
+  </div>
+</div>
