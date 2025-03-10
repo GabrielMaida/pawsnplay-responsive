@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
 
 /* Declaring layers in order of priority */
-@layer reset, colors;
+@layer reset, colors, base;
 
 /* Reset CSS */
 @layer reset{
@@ -16,12 +16,6 @@
         width: 100%;
         overflow-x: hidden;
         font-size: 15px;
-
-        /* Temporary */
-        img{
-            max-height: 200px;
-        }
-
     }
 }
 
@@ -34,5 +28,27 @@
         --light-text: #ffffff;
         --primary-color: #1a2845;
         --secondary-color: #FFFFFF;
+    }
+}
+
+/* Base Values */
+@layer base{
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        line-height: 1.6;
+        background-color: var(--light-bg);
+        color: var(--dark-text);
+    }
+    
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* Temporary */
+    img{
+        max-height: 200px;
     }
 }
