@@ -318,27 +318,25 @@
 				display: flex;
 				flex-direction: column;
 
-				div.cat-vitamin{
-					display: none;
+				div.cat-vitamin.product-card{
 					background-image: url(images/cat-food1.png);
 				}
-				div.cat-food{
-					display: none;
+				div.cat-food.product-card{
 					background-image: url(images/cat-food2.png);
 				}
-				div.dog-food{
+				div.dog-food.product-card{
 					display: none;
 					background-image: url(images/dog-food1.png);
 				}
-				div.pet-plate{
+				div.pet-plate.product-card{
 					display: none;
 					background-image: url(images/cat-food1.png);
 				}
-				div.bird-water{
+				div.bird-water.product-card{
 					display: none;
 					background-image: url(images/cat-food2.png);
 				}
-				div.dog-water{
+				div.dog-water.product-card{
 					display: none;
 					background-image: url(images/dog-food1.png);
 				}
@@ -468,6 +466,12 @@
 						}
 					}
 				}
+			}
+
+			p.shop-viewmore{
+				display: none;
+				margin-left: auto;
+				margin-top: 1rem;
 			}
 		}
 
