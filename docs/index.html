@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
 	<title>Paws n' Play</title>
 </head>
 <body>
@@ -66,7 +67,7 @@
 				<li><a href="">Fish</a></li>
 				<li><a href="">Birds</a></li>
 			</ul>
-			<div class="shop-cards">
+			<div class="shop-cards" id="shop-cards">
 				<div class="product-card cat-vitamin">
 					<div class="product-first-line">
 						<p class="product-value">₦15,000.00</p>
@@ -79,9 +80,9 @@
 					<p class="product-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel porta massa. Proin ac nibh.</p>
 					<div class="product-last-line">
 						<div class="product-input-number">
-							<p class="product-input-number-plus">+</p>
-							<p class="product-input-number-value">0</p>
-							<p class="product-input-number-less">-</p>
+							<p class="product-input-number-plus" id="product-input-number-plus">+</p>
+							<p class="product-input-number-value" id="product-input-number-value">0</p>
+							<p class="product-input-number-less" id="product-input-number-less">-</p>
 						</div>
 						<p class="product-add-card">Add to Card</p>
 					</div>
@@ -182,7 +183,7 @@
 					</div>
 				</div>
 			</div>
-			<p class="shop-viewmore">View More &gt;&gt;&gt;</p>
+			<p class="shop-viewmore" id="shop-viewmore">View More &gt;&gt;&gt;</p>
 		</section>
 		
 		<section class="services" id="services">
@@ -414,8 +415,14 @@
 						<label for="checkbox">You agree to our friendly <span class="underlined">privacy policy</span>.</label>
 					</div>
 
-					<button onclick="validateForm();">Send Message</button>
+					<button type="button" id="submit-button">Send Message</button>
 				</form>
+			</div>
+			<div id="modal-overlay" class="hidden">
+				<div id="modal-message">
+					<p id="modal-text"></p>
+					<button id="modal-ok-button">OK</button>
+				</div>
 			</div>
 		</section>
 		
@@ -425,8 +432,8 @@
 				<p>Be the first to receive latest updates on promo, sales and offers</p>
 			</div>
 			<div class="newsletter-inputs">
-				<input type="email" placeholder="Enter your email">
-				<button>Subscribe</button>
+				<input type="email" placeholder="Enter your email" id="newsletter-email">
+				<button id="newsletter-button">Subscribe</button>
 			</div>
 		</aside>
 	</main>
@@ -510,23 +517,5 @@
 			</div>
 		</div>
 	</footer>
-	
-	<!-- Scripts -->
-	<script>
-		document
-		.getElementById('hamb-menu')
-		.onclick = function(){
-			document
-			.getElementById('nav-links')
-			.classList
-			.toggle('active');
-			document
-			.getElementById('hamb-menu')
-			.ariaExpanded = 
-			document
-			.getElementById('hamb-menu')
-			.ariaExpanded == "true" ? "false" : "true";
-		}
-	</script>
 </body>
 </html>
